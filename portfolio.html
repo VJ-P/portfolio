@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Vijay Patel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://kit.fontawesome.com/3fca1edcca.js" crossorigin="anonymous"></script>
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {
+      font-family: "Montserrat", sans-serif; color: black;
+    }
+    .bgimg-1{
+      background-image: url("bg2.jpg");
+
+      height: 580px;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    .bg-dark{
+      transition: 250ms ease;
+      background: transparent !important;
+    }
+    .bg-dark.scrolled{
+      background: #113848 !important;
+    }
+    .bg3{
+      background-color: #113848;
+    }
+    .header1{
+      margin-top: 70px;
+    }
+    .icon{
+      color: #ffffff;
+      font-size:60px;
+      margin: 5% 2%;
+
+    }
+    .icon:hover{
+      color: #cccccc;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- first element: name + background -->
+    <div class="bgimg-1" id="home">
+      <div>
+        <h1 style="font-size: 370%; color: white; text-align: center; padding-top:15%; padding-bottom:5%; margin-left:10%; margin-right:10%;">
+          VIJAY PATEL
+        </h1>
+      </div>
+      <div style="text-align: center;">
+        <a href="Resume_Vijay_Patel.pdf" target="_blank">
+          <button type="button" class="btn btn-outline-light btn-lg">
+            Resume
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container header1" id="about">
+      <h1 class="text-center display-5" style="text-decoration: underline; margin-bottom:2%;">
+        About
+      </h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-4" style="margin-top:40px;">
+          <img src="profile.jpg" class="rounded mx-auto d-block img-fluid" style="width:70%"  alt = "profile pic">
+        </div>
+        <div class="col-md-6 col-lg-8" style="margin-top:40px;">
+          <p>
+            Welcome! My name is Vijay Patel and I am a 3<sup>rd</sup> year <b>Computer Engineering and Management</b>
+            student at McMaster University in Hamilton, Ontario.
+          </p>
+          <p>
+            I have been fascinated with technology ever since I was young. I love building things (hardware or software), learning new
+            technologies,and I have a minor interest in finance/accounting.
+          </p>
+          <p>
+            Other than programming, I am a HUGE basketball fan and I also enjoy watching superhero tv shows, and going to the gym.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Projects Section -->
+    <div class="container header1" id="projects">
+      <h1 class="text-center display-5" style="text-decoration: underline; margin-bottom:2%;">
+        Projects
+      </h1>
+      <div class="card-deck">
+
+        <!-- Easy Docs Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card">
+            <img class="card-img-top" src="easyDocs.png" alt="easyDocs logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">easyDocs</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal1">
+                +
+              </button>
+
+              <div class="modal fade" id="modal1">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>easyDocs</h1>
+                    </div>
+                    <div class="modal-body">
+                      <p><b>Technology Used: Python, Django, SQLite, HTML, CSS, JavaScript</b></p>
+                      <p>
+                        This project was in collaboration with a team of 4 at DeltaHacks 5. Doctors listed the burden of paperwork
+                        as their top concern in the Medical Economics 89th Annual Physician Report (Dahl, 2018). Our goal was to
+                        create an application that would help reduce the amount of inefficient paper used in the healthcare industry.
+                      </p>
+                      <p>
+                        We did this by creating a web application using the <b>Python Django</b> framework. The web application would assist
+                        doctors by keeping them updated on their patients and assist in taking notes. The core of our application was
+                        a complex <b>SQL</b> database that we designed. The database kept track of several components such as appointments,
+                        patient personal information, healthcare providers, conditions/diseases, current prescriptions, family history,
+                        etc.
+                      </p>
+                      <p>
+                        The database was then connected to a simple interface that healthcare providers could access which would allow
+                        them to edit patient information, manage appointments, and export the patient information into an easy-to-read
+                        Microsoft Word document. Not only did the Word document provide patient information, but also warned the doctor
+                        to check for certain diseases based on medical/family history and warned of medication conflicts.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/EasyDocs--DeltaHacks5">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- N.A.P Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card">
+            <img class="card-img-top" src="naa.png" alt="N.A.A. logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">NBA Award Analysis</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal2">
+                +
+              </button>
+
+              <div class="modal fade" id="modal2">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>NBA Award Analysis</h1>
+                    </div>
+                    <div class="modal-body">
+                      <p><b>Technology Used: Python, Tableau, MySQL</b></p>
+                      <p>
+                        As someone who is a huge basketball fan, I was excited to see the way advanced analytics/stats was having an impact on
+                        the game and the way it was being played. I wanted to use the analytics to do some of my own research and determine who
+                        the players are that are moving under the radar as well as players who were rated higher than their level of play indicated.
+                      </p>
+                      <p>
+                        For this project I scraped a basketball statistics website using the <b>BeautifulSoup</b> Python Package. I then filtered out players
+                        from the data who had small sample sizes of playing time (injuries/non-rotation players) and stored the data into a <b>MySQL</b> database.
+                        From there the data was visualized using <b>Tableau</b> to identify trends and predict the end of season award winners.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/NBA-Award-Predictor">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Focus Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card">
+            <img class="card-img-top" src="focus.png" alt="Focus logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">Focus</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal3">
+                +
+              </button>
+
+              <div class="modal fade" id="modal3">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>Focus</h1>
+                    </div>
+                    <div class="modal-body">
+                      <p><b>Technology Used: Python, Windows</b></p>
+                      <p>
+                        This is a simple <b>Python</b> script that I developed to run in the background of <b>Windows</b> as a process during a set schedule.
+                        The script blocks access to certain distracting websites such as Facebook, Twitter, Reddit, Youtube, etc. so that
+                        I can fully focus on my work (school or personal). Not only was this useful for focusing on and completing work,
+                        the program helped reduce my stress as well I was spending less time on these social medias, and more time being
+                        productive.
+                      </p>
+                      <p>
+                        This program works by manipulating the 'hosts' file in <b>Windows</b> and redirecting each website to an error page IP when
+                        someone tries to access it in the set time range.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/Website-Blocker">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Define Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card">
+            <img class="card-img-top" src="define.png" alt="Define logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">Define</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal4">
+                +
+              </button>
+
+              <div class="modal fade" id="modal4">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>Define</h1>
+                    </div>
+                    <div class="modal-body">
+                      <p><b>Technology Used: Python</b></p>
+                      <p>
+                        This project is a command-line application that I developed to quickly provide the definition of words when
+                        needed. The program utilizes a JSON data set which contains all the words as the 'key', and the definitions
+                        as the 'value'. The program then requires an input from the user for the word that needs to be defined. I also
+                        utilized the <b>difflib</b> library in <b>Python</b> to find the closest match in the case that the user inputted
+                        a typo for the word they were trying to define.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/Dictionary-Application">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Autobot Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card">
+            <img class="card-img-top" src="autobot.png" alt="Autobot logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">Autobot</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal5">
+                +
+              </button>
+
+              <div class="modal fade" id="modal5">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>Autobot</h1>
+                    </div>
+                    <div class="modal-body" style="text-align:center;">
+                      <img class="img-responsive" style="margin: 0 auto; width:30%;" src="sumobot.jpeg" alt="Sumobot">
+                      <p style="text-align:left; margin-top: 25px;"><b>Technology Used: Arduino</b></p>
+                      <p style="text-align:left;">
+                        This project was in collaboration with 2 other engineers at the McMaster Sumobot Competition. The bot was constructed using
+                        using electrical components (DC motor, H bridge, protoboard, ultrasonic sensor, etc.) and controlled using an Arduino Uno board.
+                      </p>
+                      <p style="text-align:left;">
+                        For this project I developed an Arduino program to detect objects in its surroundings with an ultrasonic sensor, and adapt
+                        movement based on the environment. The program had repeatable pattern when it was trying to sense/detect the other robot but,
+                        move into attack position when it detected something within a certain range. The bot would also override whatever function it
+                        was running if the colour sensors detected 'white', meaning that it was leaving the ring.
+                      </p>
+                      <p style="text-align:left;">
+                        My biggest takeaway from this project was how similar concepts and technology could applied to bigger projects such as self driving
+                        cars.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="text-center display-5" style="text-decoration: underline; margin-top: 4%;margin-bottom:2%;">
+        Upcoming Projects
+      </h3>
+
+      <div class="card-deck">
+
+        <!-- CPUL8R Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card" style="margin-bottom:10%">
+            <img class="card-img-top" src="cpul8r.png" alt="CPU L8R logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">CPUL8R</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal6">
+                +
+              </button>
+
+              <div class="modal fade" id="modal6">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>CPU L8R</h1>
+                    </div>
+                    <div class="modal-body" style="text-align:left;">
+                      <p style="text-align:left; margin-top: 25px;"><b>Technology Used: MATLAB/Simulink, Python</b></p>
+                      <p style="text-align:left;">
+                        Currently working in a group of 5 to design and create a functioning Pacemaker for my Software Development course.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Contact Section -->
+
+    <div class="bg3" style="margin-top: 20px;">
+      <div id="contact">
+        <div style="text-align: center;">
+          <a target="_blank" href="https://github.com/VJ-P"><i class='fab fa-github icon'></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/vijaypat/"><i class='fab fa-linkedin-in icon'></i></a>
+          <a target="_blank" href="mailto:patelv60@mcmaster.ca"><i class='fas fa-envelope icon'></i></a>
+        </div>
+        <p style="text-align: center; color:white; margin-bottom:0px; padding-bottom:20px;">Copyright <span>&#169;</span> 2019 Vijay Patel</p>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      $(window).scroll(function(){
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 490);
+      })
+    </script>
+
+  </body>
+</html>
