@@ -124,6 +124,129 @@
       </h1>
       <div class="card-deck">
 
+        <!-- Image Repo -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card" style="margin-bottom:10%">
+            <img class="card-img-top" src="ImageRepo.png" alt="Image Repo logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">Image Repo</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal9">
+                +
+              </button>
+
+              <div class="modal fade" id="modal9">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>Image Repo</h1>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="text-align:left;">
+                      <p style="text-align:left; margin-top: 25px;"><b>Technology Used: Node, Express, MongoDB, Cloudinary</b></p>
+                      <p style="text-align:left;">
+                        The project has a basic premise where a user can share an upload an image or multiple, and they will be posted on the main page of the website.
+                        The user can also add additional information about the image they are sharing through a title and description. In addition to this they can also
+                        delete this image or download it.
+                      </p>
+                      <p>
+                        The main purpose for building this was because I wanted to learn more about how the backend process works for
+                        apps like Instagram when an image is uploaded. I have created apps before which utilize links to an image, but I have never handled files before
+                        so learning how to do that was very cool. The app is built using a JavaScript tech stack with an Express.js server-side framework and MongoDB
+                        Atlas database to store metadata around the image as well as the link to where the file is hosted. The image file once uploaded is sent to a
+                        Cloudinary storage where it is hosted for the app to access since it is not feasible to store images in a database like MongoDB due to file sizes.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/Image-Repo">Github</a>
+                      <a href="https://nameless-mountain-33431.herokuapp.com/">Live Demo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- networkCLI -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card" style="margin-bottom:10%">
+            <img class="card-img-top" src="networkCLI.png" alt="Network CLI logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">networkCLI</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal8">
+                +
+              </button>
+
+              <div class="modal fade" id="modal8">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>networkCLI</h1>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="text-align:left;">
+                      <p style="text-align:left; margin-top: 25px;"><b>Technology Used: Go</b></p>
+                      <p style="text-align:left;">
+                        Developed a command line tool to perform a port scan and detect which network ports are open and vulnerable to breeches.
+                        Added functionality to query a given host's data such as the nameservers, CNAME, IP Addresses, and MX records.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/network-cli">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Should I Eat This Card -->
+        <div class="col-md-6 col-lg-4" style="margin-top:2%">
+          <div class="card" style="margin-bottom:10%">
+            <img class="card-img-top" src="SIET.png" alt="SIET logo">
+            <div class="card-body" style="text-align:center;">
+              <h5 class="card-title">Should I Eat This?</h5>
+
+              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal7">
+                +
+              </button>
+
+              <div class="modal fade" id="modal7">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="text-align:left;">
+                    <div class="modal-header">
+                      <h1>Should I Eat This?</h1>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body" style="text-align:left;">
+                      <p style="text-align:left; margin-top: 25px;"><b>Technology Used: Node, Express, MongoDB, Bootstrap</b></p>
+                      <p style="text-align:left;">
+                        Developed a full-stack recipe rating application, in order to encourage more people to cook at home. 
+                        Users are able to share their own recipes, while reviewing and commenting on others' recipes.
+                      </p>
+                    </div>
+                    <div class="modal-footer" style="text-align:left;">
+                      <a href="https://github.com/VJ-P/ShouldIEatThis">Github</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
         <!-- Croup Chat Card -->
         <div class="col-md-6 col-lg-4" style="margin-top:2%">
           <div class="card">
@@ -389,51 +512,9 @@
 
       </div>
 
-      <h3 class="text-center display-5" style="text-decoration: underline; margin-top: 4%;margin-bottom:2%;">
+      <!-- <h3 class="text-center display-5" style="text-decoration: underline; margin-top: 4%;margin-bottom:2%;">
         Upcoming Projects
-      </h3>
-
-      <div class="card-deck">
-
-        <!-- CPUL8R Card -->
-        <div class="col-md-6 col-lg-4" style="margin-top:2%">
-          <div class="card" style="margin-bottom:10%">
-            <img class="card-img-top" src="SIET.png" alt="SIET logo">
-            <div class="card-body" style="text-align:center;">
-              <h5 class="card-title">Should I Eat This?</h5>
-
-              <button type="button" class="btn btn-outline-dark" style="text-align:center;" data-toggle="modal" data-target="#modal7">
-                +
-              </button>
-
-              <div class="modal fade" id="modal7">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content" style="text-align:left;">
-                    <div class="modal-header">
-                      <h1>Should I Eat This?</h1>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body" style="text-align:left;">
-                      <p style="text-align:left; margin-top: 25px;"><b>Technology Used: Node, Express, MongoDB, Bootstrap</b></p>
-                      <p style="text-align:left;">
-                        Currently developing a full-stack recipe rating application, in order to encourage more people to cook at home. 
-                        Users will be able to share their own recipes, while reviewing and commenting on others' recipes.
-                      </p>
-                    </div>
-                    <div class="modal-footer" style="text-align:left;">
-                      <a href="https://github.com/VJ-P/ShouldIEatThis">Github</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
+      </h3> -->
 
     </div>
 
