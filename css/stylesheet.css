@@ -1,0 +1,96 @@
+body, h1,h2,h3,h4,h5,h6 {
+    font-family: "Montserrat", sans-serif; color: black;
+}
+
+.bgimg-1{
+    background-image: url("img/Toronto.jpg");
+
+    height: 800px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-dark{
+    transition: 250ms ease;
+    background: transparent !important;
+}
+
+.bg-dark.scrolled{
+    background: #113848 !important;
+}
+
+.bg3{
+    background-color: #113848;
+}
+
+.header1{
+margin-top: 70px;
+}
+
+.icon{
+    color: #ffffff;
+    font-size:60px;
+    margin: 5% 2%;
+}
+
+.icon:hover{
+    color: #cccccc;
+}
+
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    position: fixed;
+    display: table;
+    background-image: url(../img/Toronto.jpg);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    will-change: transform;
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    color: #FFFFFF;
+}
+
+.caption h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: 0rem;
+    /* text-shadow: .1rem .1rem .8rem #000000; */
+    padding-bottom: .7rem;
+}
+
+.btn-lg {
+    font-size: 1.2rem;
+    font-weight: 500;
+}

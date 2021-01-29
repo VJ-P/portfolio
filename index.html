@@ -10,43 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <script src="https://kit.fontawesome.com/3fca1edcca.js" crossorigin="anonymous"></script>
-    <style>
-    body, h1,h2,h3,h4,h5,h6 {
-      font-family: "Montserrat", sans-serif; color: black;
-    }
-    .bgimg-1{
-      background-image: url("img/Toronto.jpg");
-
-      height: 800px;
-
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-    .bg-dark{
-      transition: 250ms ease;
-      background: transparent !important;
-    }
-    .bg-dark.scrolled{
-      background: #113848 !important;
-    }
-    .bg3{
-      background-color: #113848;
-    }
-    .header1{
-      margin-top: 70px;
-    }
-    .icon{
-      color: #ffffff;
-      font-size:60px;
-      margin: 5% 2%;
-
-    }
-    .icon:hover{
-      color: #cccccc;
-    }
-    </style>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/stylesheet.css">
   </head>
 
   <body>
@@ -76,18 +42,17 @@
     </nav>
 
     <!-- first element: name + background -->
-    <div class="bgimg-1" id="home">
-      <div>
-        <h1 style="font-size: 400%; color: white; text-align: center; padding-top:16%; padding-bottom:5%; margin-left:10%; margin-right:10%;">
-          VIJAY PATEL
-        </h1>
+    <div id="home">
+      <div class="landing">
+        <div class="home-wrap">
+          <div class="home-inner">
+          </div>
+        </div>
       </div>
-      <div style="text-align: center;">
-        <a href="Resume_Vijay_Patel.pdf" target="_blank">
-          <button type="button" class="btn btn-outline-light btn-lg">
-            Resume
-          </button>
-        </a>
+    
+      <div class="caption text-center">
+        <h1 style="padding-bottom:4%;">VIJAY PATEL</h1>
+        <a class="btn btn-outline-light btn-lg" href="Resume_Vijay_Patel.pdf">Resume</a>
       </div>
     </div>
 
@@ -538,7 +503,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
       $(window).scroll(function(){
-        $('nav').toggleClass('scrolled', $(this).scrollTop() > 490);
+        $('nav').toggleClass('scrolled', $(this).scrollTop() > 520);
       })
     </script>
 
